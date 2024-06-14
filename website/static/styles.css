@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #00ffff;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+button {
+    background-color: #000000;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    padding: 10px; /* Increase padding for better touch experience */
+    margin: 5px;
+}
+
+a {
+    color: #00ffff;
+}
+
+a:hover {
+    color: #ff00ff;
+}
+
+h1 {
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color */
+    padding: 20px; /* Padding around content */
+    margin: 0;
+    text-align: center; /* Center align text */
+}
+
+/* Footer styles */
+footer {
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    width: 100%; /* Full width */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center align text */
+}
+
+/* Footer link styles */
+footer a {
+    background: linear-gradient(to right, #00ffff, #ff00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff, 0 0 100px #ff00ff, 0 0 150px #ff00ff;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Footer link hover styles */
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ff00ff; /* Change color on hover */
+}
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 600px) {
+    button {
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+        padding-left: 0;
+        padding-right: 0;
+        background-color: red;
+    }
+
+    body {
+        font-size: 2rem; /* Increase font size for better readability on smaller screens */
+    }
+}

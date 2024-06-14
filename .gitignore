@@ -1,0 +1,11 @@
+# data files
+*.csv
+*.env
+
+# modules
+node_modules
+package-lock.json
+
+# cache files
+*.pyc
+

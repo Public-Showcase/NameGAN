@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Generator</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+	<h1>Generate a new name</h1>
+    <h3>Gemini GPT Model powered</h3>
+	<form action="/gptGenerate" method="POST">
+        <label for="startChar">Start Character:</label>
+        <input type="text" id="startChar" name="startChar" required><br>
+        
+        <label for="religion">Religion:</label>
+        <input type="text" id="religion" name="religion" required><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" required><br>
+        
+        <label for="originCountry">Origin Country:</label>
+        <input type="text" id="originCountry" name="originCountry" required><br>
+        
+        <button type="submit">Generate</button>
+    </form>
+
+    <form action="/">
+		<button type="submit">Use home-trained LSTM based model to generate names</button>
+	</form>
+
+    <footer>
+		<a href="https://jeel.notion.site/Name-Generator-1887434654f84df5812b3adf8c8544b8?pvs=4">
+			Learn more about the Name Generator Project
+		</a>
+	</footer>
+</body>
+</html>

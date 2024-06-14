@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate a new name</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+    <script>
+        const refreshPage = () => {
+            window.location.reload();
+        }
+    </script>
+</head>
+<body>
+	<h1>Generated Name:</h1>
+    {% if names %}
+        <p>{{ names[0] }}</p>
+        <p>{{ names[1] }}</p>
+        <p>{{ names[2] }}</p>
+        <p>{{ names[3] }}</p>
+        <p>{{ names[4] }}</p>
+    {% endif %}
+    <button onclick="refreshPage()">Generate Again</button>
+    <a href="/">Generate another name</a>
+
+    <footer>
+		<a href="https://jeel.notion.site/Name-Generator-1887434654f84df5812b3adf8c8544b8?pvs=4">
+			Learn more about the Name Generator Project
+		</a>
+	</footer>
+</body>
+</html>

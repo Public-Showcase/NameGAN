@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Generator</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+	<h1>Generate a new name</h1>
+	<h3>LSTM Based model</h3>
+	<form action="/generate_name" method="POST">
+		<label for="start">Start character(s)</label>
+		<input type="text" id="start" name="start">
+		<button type="submit">Generate</button>
+	</form>
+	<form action="/gptGeneratePage" method="post">
+		<button type="submit">Use GPT to generate names (better!)</button>
+	</form>
+
+	<footer>
+		<a href="https://jeel.notion.site/Name-Generator-1887434654f84df5812b3adf8c8544b8?pvs=4">
+			Learn more about the Name Generator Project
+		</a>
+	</footer>
+</body>
+</html>
